@@ -30,6 +30,7 @@ class App extends React.Component{
 
     render() {
         return <div className='container'>
+            <WorkInProgress/>
             <Menu />
             <Welcome />
             <AdoptCat />
@@ -48,11 +49,19 @@ class App extends React.Component{
     }
 }
 
+class WorkInProgress extends React.Component{
+    render(){
+        return <div className='work-progress'>
+            <p>Work in Progress</p>
+        </div>
+    }
+}
+
 class Menu extends React.Component{
     render(){
         return <div className='menu'>
             <div className='logo'>
-                <img src={'images/logo.svg'}></img>
+                <img src={'images/paw.png'}></img>
                 <a className='logo-link'>Cat's Shelter</a>
             </div>
             <ul>
@@ -83,7 +92,7 @@ class Welcome extends React.Component{
 
 class AdoptImage extends React.Component{
     render(){
-        return <img src={'images/cat-five.jpeg'}/>;
+        return <img src={'images/catcat.png'}/>;
     }
 }
 class SearchBar extends React.Component {
@@ -181,21 +190,21 @@ class AdoptCat extends React.Component{
                 <h2>Planning to Adopt a Cat?</h2>
             </div>
             <div className='adopt-info-section'>
-                <img src={'images/books.png'}/>
+                <img src={'images/book-open.png'}/>
                 <h3>Checklist for New Adopters</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aperiam aspernatur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <a className='btn-learn-more'>Learn More</a>
             </div>
             <div className='adopt-info-section'>
-                <img src={'images/googles.png'}/>
+                <img src={'images/search.png'}/>
                 <h3>Checklist for New Adopters</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aperiam aspernatur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <a className='btn-learn-more'>Learn More</a>
             </div>
             <div className='adopt-info-section'>
-                <img src={'images/human.png'}/>
+                <img src={'images/github.png'}/>
                 <h3>Checklist for New Adopters</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aperiam aspernatur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <a className='btn-learn-more'>Learn More</a>
             </div>
         </div>;
@@ -240,7 +249,7 @@ class Footer extends React.Component{
         return <footer>
             <div className='footer-container'>
                 <div className='footer-section'>
-                    <img src={'images/logo.svg'}></img>
+                    <img src={'images/paw.png'}></img>
                     <a className='logo-link'>Cat's Shelter</a>
                     <p className='footer-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -285,11 +294,10 @@ class Footer extends React.Component{
                     <nav>
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Causes</a></li>
-                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Adopt a Cat</a></li>
+                            <li><a href="#">Way to Help</a></li>
                             <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li id="last-border"><a href="#">Contact</a></li>
+                            <li id="last-border"><a href="#">About Us</a></li>
                         </ul>
                     </nav>
                 </div>
